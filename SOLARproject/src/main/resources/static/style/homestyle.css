@@ -1,279 +1,644 @@
-.navbar-nav {
-    display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    gap: 30px; /* Add spacing between items */
-}
-
-.navbar-nav .nav-link {
-    font-size: 20px; /* Make items larger */
-    padding: 10px 15px; /* Add more spacing around items */
-       
-}
-.navbar-nav{
-	    margin: auto;
-}
-#abc{
-	margin-left: 30px;
-	    
-}
-#abd{
-	margin-right: -143px;
-}
+#abc{    margin-left: 4px;}
 #firstnav{
 	height:50px;
 }
 #secnav{
 	height:91px;
 }
-#abe{
-	    margin-left: 2rem !important;
-}
-#abf{
-	font-family: cursive;
-}
- #abg{
-
-     height: 520px;
- }
- #abq{
-  margin-top:50px;}
-  
-.custom-navbar {
-    position: relative;  /* Ensure navbar stays on top */
-    z-index: 1000; /* Higher value to stay above carousel */
-}
-.carousel-fade .carousel-item {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-.carousel-fade .carousel-item.active {
-    opacity: 1;
+.navbar .fab {
+    font-size: 1rem; /* Adjust icon size */
+    color: white !important; /* Ensure visibility */
+    display: inline-block; /* Ensure they remain visible */
 }
 
-/* Zoom-in effect */
-.abg {
-    transition: transform 3s ease-in-out;
-}
-.carousel-item.active .abg {
-    transform: scale(1.1);
+.navbar .fab:hover {
+    color: #0d6efd; /* Change color on hover */
 }
 
-/* Slide-up effect */
-.carousel-item {
-    transform: translateY(50px);
-    transition: transform 1s ease-in-out;
+@media (max-width: 576px) {
+    .navbar .fab {
+        font-size: 1.2rem; /* Adjust for small screens */
+    }
 }
-.carousel-item.active {
-    transform: translateY(0);
+/*__________________________________________________navbar items css____________________*/
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Optional: remove gap between link and menu */
 }
-.quote-overlay {
+
+.nav-item.dropdown .dropdown-toggle::after {
+  transition: transform 0.2s;
+}
+
+.nav-item.dropdown:hover .dropdown-toggle::after {
+  transform: rotate(180deg); /* Optional: rotate arrow on hover */
+}
+
+/* this is css for images effects________________________________________________________________________ */
+
+ /* Carousel image height and zoom */
+  .abg {
+    object-fit: cover;
+    height: 72vh;
+  }
+
+  .zoom-img {
+    animation: zoomIn 6s ease-in-out forwards;
+    transform: scale(1);
+  }
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  /* Quote overlay styling */
+  .quote-overlay {
     position: absolute;
     top: 50%;
-    left: 4%;
     transform: translateY(-50%);
-    width: 40%;
-    text-align: left;
-}
-
-/* Quote text style */
-.quote-text {
-    font-size: 3rem;
-    font-weight: bold;
-    color: white; /* White text */
-    text-shadow: 2px 2px 10px black;
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-in-out forwards;
-}
-
-/* Text animation */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-<!--  this is style for about us page_______________________________________________________-->
-    .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                        url('https://via.placeholder.com/1920x600?text=Renewable+Energy');
-            background-size: cover;
-            color: white;
-            padding: 100px 0;
-        }
-        .mission-vision-card {
-            border-left: 4px solid #0d6efd;
-            transition: transform 0.3s;
-        }
-        .mission-vision-card:hover {
-            transform: translateY(-5px);
-        }
-        .ceo-quote {
-            background-color: #f8f9fa;
-            border-left: 4px solid #0d6efd;
-        }
-        #abk{
-            width: 500px;
-    height: 350px;}
-    
-<!--    three icons_______________________________________________________________________________________________      --->
-.hero-sectionn {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                        url('https://via.placeholder.com/1920x600?text=Renewable+Energy');
-            background-size: cover;
-            color: white;
-            padding: 100px 0;
-        }
-        .info-section {
-            padding: 60px 0;
-        }
-        .energy-card {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s;
-            border-left: 4px solid #0d6efd;
-        }
-        .energy-card:hover {
-            transform: translateY(-5px);
-        }
-        .energy-icon {
-            font-size: 40px;
-            color: #0d6efd;
-        }
-        #abl{
-        height:170px;
-        width:350px;
-        }
-        #abm{
-            margin-top: -60px;}
-            
-            html, body {
-    height: 100%;
-}
-.footer {
-    position: relative;
-    bottom: 0;
+    padding: 1rem 2rem;
+    color: #fff;
     width: 100%;
-}
+    max-width: 600px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  }
 
-#abm{
-	margin-left: -89px;
-	    margin-top: -5px;
-}
-#abn{
-	    margin-left: 88px;
-}
-#abo{
-	    background-color: #202225 !important;
-}
-#abp{
-	height: 500px;
-	width:450px;
-}
+  /* Move text to left side */
+  .left-align {
+    left: 5%;
+    text-align: left;
+  }
+
+  /* Quote text animation */
+  .quote-text {
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideFadeLeft 1.5s ease forwards;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes slideFadeLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 
-
-
-
-  body {
-            background: url('your-background-image.jpg') no-repeat center center/cover;
-        }
-
-        .feature-box {
-            text-align: center;
-             margin-bottom: 150px;
-             margin-top:75px;
-            
-            opacity: 0;
-            transition: all 1s ease-out;
-        }
-
-        .diamond {
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid #c65b11;
-            transform: rotate(45deg);
-            margin: 0 auto 10px;
-        }
-
-        .diamond i {
-            transform: rotate(-45deg);
-            font-size: 24px;
-            color: #c65b11;
-        }
-
-        .feature-box p {
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        .solar-image {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 10px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-            opacity: 0;
-            transform: scale(0.8);
-            transition: all 1s ease-out;
-        }
-
-        /* Slide effects */
-        .slide-left {
-            transform: translateX(-50px);
-        }
-
-        .slide-right {
-            transform: translateX(50px);
-        }
-
-        /* Appear when in view */
-        .visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .solar-image.visible {
-            opacity: 1;
-            transform: scale(1);
-        }
-        
-        
-        
-        
-        
-        .service-box {
-        text-align: center;
-        padding: 15px;
-        background: #f9f9f9;
-        border-radius: 10px;
-        transition: transform 0.3s ease-in-out;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .abg {
+      height: 50vh;
     }
 
-    .service-box img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
-        margin-bottom: 10px;
+    .quote-text {
+      font-size: 1.3rem;
     }
 
-    .service-box h5 {
-        font-size: 18px;
-        font-weight: bold;
+    .quote-overlay {
+      max-width: 90%;
+      padding: 1rem;
     }
 
-    .service-box:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    .welcome-text {
+      font-size: 1.5rem;
     }
+  }
+
+  @media (max-width: 480px) {
+    .abg {
+      height: 40vh;
+    }
+
+    .quote-text {
+      font-size: 1.1rem;
+    }
+
+    .welcome-text {
+      font-size: 1.2rem;
+    }
+
+    .left-align {
+      left: 5%;
+    }
+  }
+  /* ____________________________   this is for sec navbar _____________*/
+  
+  
+ .navbar-brand img {
+      width: 157px;
+      height: 81px;
+      margin-top: -9px;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler .fa {
+      font-size: 22px;
+    }
+
+    .welcome-text {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .offcanvas-start {
+      width: 250px;
+    }
+
+    .offcanvas-body .nav-link {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    /* Hide toggler on large screens */
+    @media (min-width: 992px) {
+      .navbar-toggler {
+        display: none;
+      }
+    }
+
+    /* Show offcanvas nav links on small screens only */
+    @media (max-width: 991.98px) {
+      .desktop-nav {
+        display: none;
+      }
+    }
+    
+    /*________________________________About us section new______________________________*/
+    
+ .aboutuscard
+ {
+       
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 3.2); /* x y blur color */
+    border-radius: 12px; /* optional, for rounded corners */
+ }
+ .nexth{
+ padding: 3% 11%;}
+ .col-orange{
+ color: #A4302D;
+ font-size:3rem;
+ }
+ .texts{
+ font-size:1.5rem;}
+ .jjj{
+  color: #A4302D;}
+    
+    
+    /*         this is enery card section__________________________________________*/
+    
+ .energy-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  }
+
+  .energy-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgb(203, 75, 0);
+    border: 1px solid transparent;
+    background: linear-gradient(135deg, #A4302D, #ffffff);
+  }
+   
+  .icon svg {
+    transition: transform 0.3s ease;
+    color:orange;
+  }
+
+  .energy-card:hover svg {
+    transform: scale(1.1);
+  }
+
+  /* Pulse Animation */
+  .pulse {
+    animation: pulseAnim 2s infinite;
+  }
+
+  @keyframes pulseAnim {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  @media (max-width: 768px) {
+    .energy-card {
+      text-align: center;
+    }
+  }
+  
+  /*     this is for whyus_____________________________*/
+  .orange-col{
+  color: #A4302D;}
+  
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  margin-bottom: 2rem; /* Reduce spacing between icons */
+}
+.feature-box p {
+  font-size: 27px;         /* You can try 20px, 22px etc. */
+  font-weight: 600;        /* Optional: make it bolder */
+}
+.diamond {
+  width: 70px;
+  height: 70px;
+  background: white;            /* White background */
+  border: 2px solid #A4302D;     /* Orange border */
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #A4302D;                /* Icon color */
+  font-size: 30px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.diamond i {
+  transform: rotate(-45deg);
+}
+
+/* Center image height already handled */
+.rectangle-img {
+  width: 100%;
+  max-width: 280px;
+  height: 600px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .diamond {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+
+  .rectangle-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+ #leftcol {
+  padding: 60px 20px 60px 20px; /* Top Right Bottom Left */
+}
+
+}
+
+/*________________________________________this is no animation_____________________________________________*/
+.counter-section {
+  position: relative;
+ background: url('/images/number.jpg');
+
+  background-size: cover;
+  height: 400px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.counter::after {
+  content: "+";
+  margin-right: 2px;
+}
+
+.counter-section .overlay {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+ background-color: rgba(255, 255, 255, 0.2); /* Adjust opacity here */
+  z-index: 0;
+}
+
+.counter-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.counter {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.counter + p {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .counter {
+    font-size: 2rem;
+  }
+
+  .counter + p {
+    font-size: 1rem;
+  }
+}
+
+/* _________________________________________this is our services_____________________________________________*/
+
+.service-box img {
+  width: 80%;
+  height: 230px;             /* fixed height */
+  object-fit: cover;         /* fill box nicely without distortion */
+  border-radius: 8px;        /* optional rounded corners */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* optional soft shadow */
+  transition: transform 0.4s ease;
+  border-radius: 8px;
+}
+
+
+.service-box h5 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.service-box {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.service-box:hover img {
+  transform: scale(1.05);
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.service-box:nth-child(1) { animation-delay: 0.2s; }
+.service-box:nth-child(2) { animation-delay: 0.4s; }
+.service-box:nth-child(3) { animation-delay: 0.6s; }
+/* and so on... */
+
+/*____________________________________________________need of solar ennergy_______________________________*/
+.solar-energy-section {
+  position: relative;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  background: none; /* moved background to ::before */
+}
+
+.solar-energy-section::before {
+  content: "";
+  background: url('/images/background.jpg') center center/cover no-repeat;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(90%) blur(3px); /* this dims and softens */
+  z-index: 0;
+  
+}
+.solar-energy-section::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/background.jpg') center center/cover no-repeat;
+  opacity: 0.1; /* transparent image */
+  z-index: -1; /* behind overlay */
+}
+.solar-energy-section .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* make overlay darker */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.solar-energy-section .container {
+  position: relative;
+  z-index: 1;
+}
+/*______________________Advatages of solar________________________________*/
+.fonts{
+	font-size: 1.5rem;
+}
+.sec9{
+	font-size:2.1rem;
+}
+.img-section {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* optional for nice scaling */
+}
+
+.backside {
+     background: url('/images/lastsec.jpg') center center/cover no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+   
+}
+.seclast{
+	background:#A4302D;
+	color:white;
+	    opacity: 0.8;
+}
+
+
+  
+    /*_______________________________________Completed projects sec_____________________*/
+    
+.custom-solar-section {
+  position: relative;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  background: none; /* background handled in ::before */
+  height: 700px;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.custom-solar-section::before {
+  content: "";
+  background: url('/images/com.png') center center/cover no-repeat;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(100%) blur(1px);
+  z-index: 0;
+}
+
+.custom-solar-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.custom-solar-container {
+  position: relative;
+  z-index: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#smallimg {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+#smallimg .col-12 {
+  padding: 0;
+}
+
+#smallimg img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Make images smaller */
+  margin-bottom: 20px; /* Add space below images */
+}
+
+#more-btn-row {
+  margin-top: 20px; /* Add space above the button */
+}
+
+/* For large screens */
+@media (min-width: 1200px) {
+  .custom-solar-container {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  #smallimg .col-sm-4 {
+    flex: 0 0 33.3333%;
+  }
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 1199px) {
+  .custom-solar-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  #smallimg .col-sm-4 {
+    flex: 0 0 50%;
+  }
+}
+
+/* For small screens (mobile) */
+@media (max-width: 767px) {
+  .custom-solar-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #smallimg .col-sm-4 {
+    flex: 0 0 100%;
+  }
+
+  .custom-solar-section {
+    padding: 30px 0; /* Adjust padding on small screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .custom-solar-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay on mobile */
+  }
+}
+
+/* Button Styling */
+button {
+  font-size: 16px;
+  padding: 12px 24px;
+  margin-top: 30px;
+}
+
+/* __________________________________navbar of above map__________________________________*/
+ /* Responsive settings */
+  @media (max-width: 768px) {
+    #solar-text {
+      font-size: 40px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+    #enquire-btn {
+      font-size: 18px;
+      padding: 12px 18px;
+    }
+    nav {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #solar-text {
+      font-size: 30px;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    #enquire-btn {
+      font-size: 16px;
+      padding: 10px 16px;
+    }
+  }
+/*______________________________________map___________________*/
+
+/*______________footer section __________________*/
+.foot{
+	background:black;
+	    padding-top: 5%;
+	    padding-bottom:5%;
+}
+.foot1{
+	background:#0B3D70;
+}
+/*______________________________common css sectioin___________________________*/
+.orange{
+	color:#CB4D00
+}
+
+
+/*_______________________________________________________________________About us style start_______________________________________*/

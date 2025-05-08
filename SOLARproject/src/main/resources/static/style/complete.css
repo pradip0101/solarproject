@@ -1,0 +1,36 @@
+ .fixed-img {
+    height: 200px;         /* Set a fixed height */
+    object-fit: cover;     /* Ensure image fills area, cropped if needed */
+  }
+  .color-or{
+  
+  color:#A4302D;}
+  /*__________________________________________________navbar items css____________________*/
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Optional: remove gap between link and menu */
+}
+
+.nav-item.dropdown .dropdown-toggle::after {
+  transition: transform 0.2s;
+}
+
+.nav-item.dropdown:hover .dropdown-toggle::after {
+  transform: rotate(180deg); /* Optional: rotate arrow on hover */
+}
+  
+  
+  
+  
+  /*____________________________________________Contact uss style__________________________________*/
+    .custom-shadow {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.30);
+  border-radius: 12px; /* Optional for rounded corners */
+}
+    .cont-para{
+    padding:3% 1%;
+    font-size:1.5rem;}
+    .mainhead{
+    color:#A4302D;
+    font-size:2rem;}

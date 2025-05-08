@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Navbar</title>
+
+    <!-- Include AOS library for scroll animations (CDN) -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Font Awesome (CDN for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="style/homestyle.css">
+
+    <style>
+       /* Reduce navbar size */
+        .custom-navbar {
+            padding: 8px 0;
+        }
+        
+        .navbar-brand img {
+              width: 157px;
+    height: 81px;
+    margin-top: -9px;
+        }
+
+        /* Custom styling for toggler button */
+        .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        .navbar-toggler .fa-bars, 
+        .navbar-toggler .fa-times {
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Ensure toggler icon is centered */
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body id="fir">
+
+<!--     ___________________________________________  first navbar  ___________________________________________ -->
+ <!-- Responsive Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="firstnav">
+    <div class="container" id="abc">
+        <span class="navbar-text text-white ms-1">
+            📞 9551012012
+              ✉️ bhosaleraje01@gmail.com
+        </span>
+        <div class="ms-auto" id="abd">
+            <a href="https://facebook.com" class="text-white me-3" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com" class="text-white me-3" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://linkedin.com" class="text-white me-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://instagram.com" class="text-white" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+    </div>
+</nav>
+
+
+<!--     ___________________________________________  second navbar  ___________________________________________ -->
+<!-- Second Navbar -->
+<nav class="navbar navbar-light bg-white shadow-sm">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo.png" alt="Logo" />
+    </a>
+
+<!-- Desktop Nav (hidden on small screens) -->
+<ul class="nav desktop-nav d-none d-lg-flex">
+  <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="about">About</a></li>
+
+  <!-- Dropdown Menu for Services -->
+ <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Services
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+    <li><a class="dropdown-item" href="service1">Service 1</a></li>
+    <li><a class="dropdown-item" href="service2">Service 2</a></li>
+    <li><a class="dropdown-item" href="service2">Service 3</a></li>
+    <li><a class="dropdown-item" href="service2">Service 4</a></li>
+    <li><a class="dropdown-item" href="service2">Service 5</a></li>
+    <li><a class="dropdown-item" href="service2">Service 6</a></li>
+  </ul>
+</li>
+
+  <li class="nav-item"><a class="nav-link" href="completepro">completed Projects</a></li>
+  <li class="nav-item"><a class="nav-link" href="contact">Contact Us</a></li>
+</ul>
+
+    <!-- Toggler (hidden on large screens) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+
+
+
+<!-- Offcanvas Menu for Mobile -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about">About</a></li>
+   <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Services
+  </a>
+  <ul class="dropdown-menu position-static" aria-labelledby="servicesDropdown">
+    <li><a class="dropdown-item" href="service1">Service 1</a></li>
+    <li><a class="dropdown-item" href="service1">Service 2</a></li>
+    <li><a class="dropdown-item" href="service1">Service 3</a></li>
+    <li><a class="dropdown-item" href="service1">Service 4</a></li>
+    <li><a class="dropdown-item" href="service1">Service 5</a></li>
+    <li><a class="dropdown-item" href="service1">Service 6</a></li>
+  </ul>
+</li>
+
+      <li class="nav-item"><a class="nav-link" href="completepro">Our Completed Project</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact">Contact US</a></li>
+    </ul>
+  </div>
+</div>
+<!--     ___________________________________________  images at homepage  ___________________________________________ -->
+<!-- Carousel -->
+<!-- Carousel -->
+<div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="images/first.png" class="d-block w-100 abg zoom-img" alt="Image 1">
+      <div class="quote-overlay left-align">
+        <h3 class="quote-text">Manageable, Reliable and Affordable Energy!</h3>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="images/five.png" class="d-block w-100 abg zoom-img" alt="Image 2">
+      <div class="quote-overlay left-align">
+        <h3 class="quote-text">"Solar power: The future of energy."</h3>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="images/ccc.png" class="d-block w-100 abg zoom-img" alt="Image 3">
+      <div class="quote-overlay left-align">
+        <h3 class="quote-text">"Let the sun fuel your world."</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Navigation Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+  <!-- Welcome Text -->
+<center><h4 class="welcome-text">WELCOME TO ADIAVINAYA SOLAR</h4></center>
+</div>
+
+<!--  ______________________ this is about us page ____________  ______________________________________________________  -->
+
+<!-- ABOUT US PAGE -->
+
+<!-- ABOUT US HERO -->
+<!--  <section class="py-3 bg-light text-center" id="about-hero">
+  <div class="container">
+    <h2 class="fw-bold mb-4" data-aos="fade-down" data-aos-delay="100">About Us</h2>
+    <p class="lead" data-aos="fade-up" data-aos-delay="300">
+      Pioneering renewable resources for over 20 years
+    </p>
+  </div>
+</section>
+
+
+<section class="py-2" id="about-info">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+     
+      <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-delay="200">
+        <img src="/images/about.png" alt="Renewable Energy" class="img-fluid rounded shadow-lg" style="max-height: 500px; width: 100%; object-fit: cover;">
+      </div>
+
+      
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+        <h5 class="fw-bold orange mb-4">What We Offer</h5>
+        <p class="text-muted fs-5">
+          We provide innovative, cost-effective energy storage solutions that help reduce your electricity bills while championing the power of renewable energy.
+        </p>
+
+        
+        <div class="mt-4">
+          <h5 class="orange d-flex align-items-center">
+            <i class="fas fa-bullseye me-2"></i> Our Mission
+          </h5>
+          <p class="text-muted mt-2">
+            Save money by paying less for electricity than your utility offers. Our solutions are not just affordable—they’re cleaner and more secure alternatives.
+          </p>
+        </div>
+
+       
+        <div class="mt-4">
+          <h4 class="orange d-flex align-items-center">
+            <i class="fas fa-eye me-2"></i> Our Vision
+          </h4>
+          <p class="text-muted mt-2">
+            To reduce dependency on non-renewable sources through high-efficiency solar panels and sustainable energy systems that power the future responsibly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  -->
+
+<!-- ABOUT US PAGE -->
+<div class="container-fluid nexth">
+<div class="card text-center aboutuscard">
+ 
+  <div class="card-body">
+    <h5 class="card-title aaaa"><span class="col-orange">About us</span></h5>
+     <h5 class="card-title"><span class="col-orange texts">Since its inception in 2015</span> </h5>
+    <p class="cardtest"><b>ADIAVINAYS Solar Energy</b> has <b>the</b> capabilities to design, engineer, supply, install, operate and maintain solar plants (KW <b>to MW scale</b>), solar <b>street</b> lights, solar water pumps, solar water <b>heaters</b> and air source heat pumps. 
+
+We’ve installed <b>solar</b> plants for residential, commercial, industrial, government, schools and non-profit customers. Empowered by a team of<b> expert engineers</b>, electricians, solar installers and sales professionals, <b>SUS Solar Energy </b>makes clean <b>energy</b> 
+available at a <b>lower cost</b> than conventional energy like <b>coal, oil,</b> and natural gas. We’re a green energy company focused on offering turn-key solutions along with the highest quality <b>of service</b> and support. Our engineering expertise makes the switch from conventional
+ to solar extremely easy for our customers and helps them considerably <b>reduce</b> their monthly utility bills. By revolutionizing solar energy and making it<b> accessible</b> and available<b> to</b> everyone, we are <b>able to</b> successfully harness the power of the sun and deliver clean and green energy to all. 
+
+We have developed a highly economical, modular and easy to install solar system that delivers uninterrupted and affordable power supply<b> to</b> reduce your high electricity bills </p>
+    
+</div>
+</div>
+</div>
+
+<!-- ___________________________this is enery icons _____________  _________________________________     -->
+<!-- ENERGY SERVICES SECTION -->
+<!-- Energy Cards Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <h2 class="text-center jjj">our core values</h2>
+      <!-- Card 1 -->
+      <div class="col-sm-10 col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="energy-card text-center px-3 py-1 rounded-4 h-100">
+          <div class="icon mb-3 pulse">
+            <img src="images/six2.png">
+          </div>
+          <h3 class="fw-bold">COMMITMENT</h3>
+          <p class="text-muted small">We commit to provide 100% renewable green energy to our nation. We promise to give best after sales & services to our customers.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-sm-10 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="energy-card text-center px-3 py-0 rounded-4 h-100">
+          <div class="icon mb-3 pulse">
+        <img src="images/six1.png">
+          </div>
+          <h3 class="fw-bold">QULITY</h3>
+          <p class="text-muted small">We never compromise the quality in solar energy. We are keen players to provide design, supply, install & maintain best quality material to our customers.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-sm-10 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="energy-card text-center px-3 py-0 rounded-4 h-100">
+          <div class="icon mb-3 pulse">
+         <img src="images/six4.png">
+          </div>
+          <h3 class="fw-bold">SAFETY</h3>
+          <p class="text-muted small">Innovation generally refers to changing processes or creating more effective process, products & ideas. We do the same things we frequently innovate new ideas to become first in the world</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--          _____________________________why us___________________________________ ___ _ ____________               -->
+
+
+<section class="container my-5">
+  <h2 class="text-center orange-col fw-bold mb-5" data-aos="fade-up">
+    Why ADIAVINAYA Solar Energy?
+  </h2>
+
+  <div class="row align-items-center justify-content-center text-center">
+    <!-- Left Column -->
+    <div class="col-md-4 mb-4 mb-md-0" id="leftcol">
+      <div class="feature-box mb-5" data-aos="fade-right">
+        <div class="diamond">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <p class="mt-2 fw-bold">INNOVATIVE TECHNOLOGY & UNCOMPROMISED</p>
+      </div>
+      <div class="feature-box" data-aos="fade-right" data-aos-delay="100">
+        <div class="diamond">
+          <i class="fas fa-clock"></i>
+        </div>
+        <p class="mt-2 fw-bold">QUALITY PRODUCTS</p>
+      </div>
+    </div>
+
+    <!-- Center Image -->
+    <div class="col-md-4 text-center mb-4 mb-md-0" data-aos="zoom-in">
+      <img src="images/first.png" alt="Solar Panels" 
+           class="img-fluid p-2 rectangle-img" />
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-md-4 mt-4 mt-md-0">
+      <div class="feature-box mb-5" data-aos="fade-left">
+        <div class="diamond">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <p class="mt-2 fw-bold">TRUSTWORTHY</p>
+      </div>
+      <div class="feature-box" data-aos="fade-left" data-aos-delay="100">
+        <div class="diamond">
+          <i class="fas fa-tools"></i>
+        </div>
+        <p class="mt-2 fw-bold">EXPERTISE SERVICES</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- -____________________________this is number animation section______________________________________________ -->
+<section class="counter-section text-white text-center">
+  <div class="overlay"></div>
+  <div class="container position-relative z-1">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+        <h1 class="counter" data-target="43">0</h1>
+        <p>Cities Covered</p>
+      </div>
+      <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <h1 class="counter" data-target="62">0</h1>
+        <p>Team Size</p>
+      </div>
+      <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <h1 class="counter" data-target="100">0</h1>
+        <p>Turnkey Projects</p>
+      </div>
+      <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <h1 class="counter" data-target="955">0</h1>
+        <p>Customers</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ____________________________this is our services seciton _________________________ -->
+<section class="container my-5" data-aos="fade-up" data-aos-delay="100">
+  <h2 class="text-center orange-col fw-bold mb-5 mt-5">Our Services</h2>
+
+  <!-- First Row -->
+  <div class="row g-4">
+    <div class="col-md-4 col-sm-6">
+      <div class="service-box text-center">
+        <img src="images/coppertube.png" alt="Service 1" class="img-fluid"  data-aos="zoom-in"
+     data-aos-delay="200">
+        <h5 class="mt-2">Solar Panel Installation</h5>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="service-box text-center">
+        <img src="images/glass.png" alt="Service 2" class="img-fluid"  data-aos="zoom-in"
+     data-aos-delay="200">
+        <h5 class="mt-2">Solar Battery Storage</h5>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="service-box text-center">
+        <img src="images/solarplant.png" alt="Service 3" class="img-fluid"  data-aos="zoom-in"
+     data-aos-delay="200">
+        <h5 class="mt-2">Maintenance & Support</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Row -->
+  <div class="row g-4 mt-3">
+    <div class="col-md-4 col-sm-6">
+      <div class="service-box text-center">
+        <img src="images/first.png" alt="Service 4" class="img-fluid"  data-aos="zoom-in"
+     data-aos-delay="200">
+        <h5 class="mt-2">Solar Water Heating</h5>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="service-box text-center">
+        <img src="images/waterpump.png" alt="Service 5" class="img-fluid"  data-aos="zoom-in"
+     data-aos-delay="200">
+        <h5 class="mt-2">Commercial Solar Solutions</h5>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="service-box text-center">
+        <img src="images/heat.png" alt="Service 6" class="img-fluid"  data-aos="zoom-in"
+     data-aos-delay="200">
+        <h5 class="mt-2">Solar Consulting</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ___________________________________________need of solar _______________________________ -->
+<section class="position-relative text-white text-center solar-energy-section">
+  <div class="overlay position-absolute w-100 h-100 top-0 start-0"></div>
+  <div class="container position-relative py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h2 class="fw-bold mb-4">Why We Need Solar Energy</h2>
+        <p class="fs-5 mb-4">
+          Solar energy is important because
+          <mark class="highlight">it’s a clean, renewable energy source that can help reduce the impact of climate change</mark>.
+        </p>
+        <h5 class="mb-3">Benefits of solar energy</h5>
+        <ul class="text-start fs-6">
+          <li><strong>Reduces electricity bills</strong>: Solar panels generate electricity directly from the sun, reducing your reliance on traditional electricity providers.</li>
+          <li><strong>Reduces carbon footprint</strong>: Solar power produces almost no greenhouse gas emissions, which helps combat climate change.</li>
+          <li><strong>Improves air quality</strong>: Solar energy reduces reliance on fossil fuels, which improves air quality.</li>
+          <li><strong>Energy independence</strong>: Solar energy can help areas with power shortages, and can save money on installing traditional power grid lines.</li>
+          <li><strong>Low maintenance costs</strong>: Solar power is efficient and has low maintenance costs.</li>
+          <li><strong>Renewable energy</strong>: Solar energy is a renewable energy source that’s available all year round.</li>
+          <li><strong>Increased property value</strong>: Solar panels can increase the value of your property and appeal to environmentally-conscious buyers.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- _______________________________Advantages of solar_______________________________________________ -->
+ <section class="background-section">
+    <div class="container-fluid backside">
+        <div class="row p-2">
+            <div class="col-12 col-md-12 col-lg-6 first-img">
+                <div class="text-center">
+                    <img src="" class="img-section">
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-items-end seclast">
+                <div class="vertical-text">
+                    
+                    <p class="sec9">Seven Compelling Reasons</p>
+                    <ol class="fonts">
+                        <li>Solar Power Is Good for the Environment.</li>
+                        <li>Solar Electricity Makes Your Home Go Off-the-Grid.</li>
+                        <li>Solar Power Can Use Underutilized Land.</li>
+                        <li>Solar Power Causes Less Electricity Loss.</li>
+                        <li>Solar Power Improves Grid Security.</li>
+                        <li>Solar Power Creates Jobs and Economic Growth in INDIA.</li>
+                        <li>Solar Power Is A Free Source of Energy.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+
+<!-- _______________________________________________________this is completed project sec____________ -->
+<section class="position-relative text-white text-center custom-solar-section">
+  <div class="custom-solar-overlay position-absolute w-100 h-100 top-0 start-0"></div>
+  <div class="container-fluid custom-solar-container px-0">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h2 class="fw-bold mb-4 text-white">Our Completed Projects</h2>  
+      </div>
+    </div>
+
+    <!-- Images Row -->
+    <div class="row gx-0" id="smallimg">
+      <div class="col-12 col-sm-4">
+        <img src="images/complete1.jpg" class="img-fluid w-100" alt="Project 1">
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="images/complete2.jpg" class="img-fluid w-100" alt="Project 2">
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="images/complete3.jpg" class="img-fluid w-100" alt="Project 3">
+      </div>
+    </div>
+    <!-- "More" Button -->
+   <!-- "More" Button Row -->
+<div class="row gx-0 justify-content-center align-items-center" id="more-btn-row">
+  <div class="col-12 text-center">
+    <a href="completepro" class="btn btn-primary">MORE</a>
+  </div>
+</div>
+   
+   
+  </div>
+</section>
+<hr>
+
+<!--    __________________________________map section____________________________________ -->
+<section class="p-0 m-0" style="width: 100%; height: 50vh;"> <!-- Full width and full viewport height -->
+<h3 class="text-center">our location</h3>
+  <div class="w-100 h-100">
+  
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45840.23765438878!2d73.86858714866926!3d18.417983478061515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eba7708a40cf%3A0x386bbc5c53ca247d!2sYewalewadi%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1745848008258!5m2!1sen!2sin" 
+  width="100%" 
+  height="100%" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+
+<!-- ________________________________________________enquie now_________________________________ -->
+<section class="pt-5">
+  <nav style="display: flex; justify-content: center; align-items: center; background: #CB4D00; padding: 20px; flex-wrap: wrap; text-align: center;">
+    <span style="font-size: 60px; color: white; margin-right: 40px;" id="solar-text">Solar is Future</span>
+    <button style="font-size: 20px; background-color: #0B3D70; color: white; border: none; padding: 15px 20px; cursor: pointer;" id="enquire-btn">
+      Enquire Now
+    </button>
+  </nav>
+</section>
+
+<!--                   __________________________footer navbar____________________ -->
+<!-- Footer Section -->
+<footer class="footer text-white py-10 foot">
+    <div class="container" >
+        <div class="row gy-4 text-center text-md-start">
+            <!-- Logo & Social Media -->
+            <div class="col-12 col-md-3">
+                <h5 class="fw-bold">
+                    <img src="/images/logo.png" alt="Company Logo" class="img-fluid mb-2">
+                </h5>
+                <h5 class="fw-bold">Follow Us</h5>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="col-6 col-md-3">
+                <h5 class="fw-bold">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><a href="#" class="text-white d-block">Home</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">About Us</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Services</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Provided -->
+            <div class="col-6 col-md-3">
+                <h5 class="fw-bold">Our Services</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><a href="#" class="text-white d-block">Wind Energy Solutions</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Solar Energy Systems</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Energy Saving Solutions</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Maintenance & Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-12 col-md-3">
+                <h5 class="fw-bold">Contact Us</h5>
+                <p class="mb-3"><i class="fas fa-map-marker-alt me-2"></i> 123 Renewable St, Green City, Country</p>
+                <p class="mb-3"><i class="fas fa-phone me-2"></i> +123 456 7890</p>
+                <p class="mb-3"><i class="fas fa-envelope me-2"></i> info@windsolutions.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer text-light py-3 foot1">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0">&copy; 2025 Best Wind Solutions. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Designed by 9551012012</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="jss/newjs.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+ // AOS.init();
+  
+  
+  AOS.init({ duration: 800, once: true });
+  AOS.init();
+  
+  
+  
+
+  document.addEventListener('DOMContentLoaded', function () {
+	    const counters = document.querySelectorAll('.counter');
+
+	    const startCounter = (counter) => {
+	      const target = +counter.getAttribute('data-target');
+	      let count = 0;
+	      const speed = 100;
+
+	      const updateCounter = () => {
+	        const increment = Math.ceil(target / speed);
+	        if (count < target) {
+	          count += increment;
+	          if (count > target) count = target;
+	          counter.innerText = count;
+	          setTimeout(updateCounter, 30);
+	        } else {
+	          counter.innerText = target;
+	        }
+	      };
+
+	      updateCounter();
+	    };
+
+	    const options = {
+	      threshold: 0.5 // Start animation when 50% of the element is visible
+	    };
+
+	    const observer = new IntersectionObserver((entries, observer) => {
+	      entries.forEach(entry => {
+	        if (entry.isIntersecting) {
+	          const counter = entry.target;
+	          startCounter(counter);
+	          observer.unobserve(counter); // run once
+	        }
+	      });
+	    }, options);
+
+	    counters.forEach(counter => {
+	      observer.observe(counter);
+	    });
+	  });
+
+</script>
+</body>
+</html>

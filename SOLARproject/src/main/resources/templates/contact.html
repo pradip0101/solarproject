@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Navbar</title>
+
+    <!-- Include AOS library for scroll animations (CDN) -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Font Awesome (CDN for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="style/homestyle.css">
+    <link rel="stylesheet" href="style/aboutstyle.css">
+    <link rel="stylesheet" href="style/complete.css">
+
+    <style>
+       /* Reduce navbar size */
+        .custom-navbar {
+            padding: 8px 0;
+        }
+        
+        .navbar-brand img {
+              width: 157px;
+    height: 81px;
+    margin-top: -9px;
+        }
+
+        /* Custom styling for toggler button */
+        .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        .navbar-toggler .fa-bars, 
+        .navbar-toggler .fa-times {
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Ensure toggler icon is centered */
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body id="fir">
+
+<!--     ___________________________________________  first navbar  ___________________________________________ -->
+ <!-- Responsive Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="firstnav">
+    <div class="container" id="abc">
+        <span class="navbar-text text-white ms-1">
+            📞 9551012012
+              ✉️ bhosaleraje01@gmail.com
+        </span>
+        <div class="ms-auto" id="abd">
+            <a href="https://facebook.com" class="text-white me-3" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com" class="text-white me-3" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://linkedin.com" class="text-white me-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://instagram.com" class="text-white" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+    </div>
+</nav>
+
+
+<!--     ___________________________________________  second navbar  ___________________________________________ -->
+<!-- Second Navbar -->
+<nav class="navbar navbar-light bg-white shadow-sm">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo.png" alt="Logo" />
+    </a>
+
+    <!-- Desktop Nav (hidden on small screens) -->
+    <ul class="nav desktop-nav d-none d-lg-flex">
+      <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about">About</a></li>
+        <!-- Dropdown Menu for Services -->
+ <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Services
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+    <li><a class="dropdown-item" href="service1">Service 1</a></li>
+    <li><a class="dropdown-item" href="#">Service 2</a></li>
+    <li><a class="dropdown-item" href="#">Service 3</a></li>
+    <li><a class="dropdown-item" href="#">Service 4</a></li>
+    <li><a class="dropdown-item" href="#">Service 5</a></li>
+    <li><a class="dropdown-item" href="#">Service 6</a></li>
+  </ul>
+</li>
+      <li class="nav-item"><a class="nav-link" href="completepro">Our Completed Project</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact">Contact Us</a></li>
+    </ul>
+
+    <!-- Toggler (hidden on large screens) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Offcanvas Menu for Mobile -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="completepro">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ______________________________________contact us image______________ -->
+<!-- Carousel -->
+<div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="images/contact.jpg" class="d-block w-100 abg zoom-img" alt="Image 1">
+      <div class="quote-overlay left-align">
+        
+      </div>
+    </div>
+
+ 
+  </div>
+</div>
+
+<!-- ___________________________________________________________________contact us form___________________ -->
+<div class="container my-5">
+  <div class="row contactus g-4">
+    
+    <!-- Left Column: Contact Info in a Card -->
+    <div class="col-12 col-lg-6">
+      <div class="card h-100 p-4 custom-shadow">
+        <h4 class="text-center mainhead">ADIAVINAYA SOLAR ENERGY PVT. LTD.</h4>
+        <p class="cont-para"><strong>Address:</strong> 123 Main Street, Yewalewadi, India</p>
+        <p class="cont-para"><strong>Phone:</strong> +919551012012</p>
+        <p class="cont-para"><strong>Email:</strong> onkarkakade@gmail.com</p>
+        <p class="cont-para"><strong>Website:</strong> contact@example.com</p>
+      </div>
+    </div>
+
+    <!-- Right Column: Contact Form in a Card -->
+    <div class="col-12 col-lg-6">
+      <div class="card h-100 p-4 custom-shadow">
+        <h4 class="text-center mainhead">Fill out</h4>
+        <form>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="mobileNo" class="form-label">Mobile No</label>
+            <input type="tel" class="form-control" id="mobileNo" placeholder="Your Phone Number">
+          </div>
+          <div class="mb-3">
+            <label for="comment" class="form-label">Comment</label>
+            <textarea class="form-control" id="comment" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-5">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!--    __________________________________map section____________________________________ -->
+<section class="p-0 m-0" style="width: 100%; height: 50vh;"> <!-- Full width and full viewport height -->
+<h3 class="text-center">our location</h3>
+  <div class="w-100 h-100">
+  
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45840.23765438878!2d73.86858714866926!3d18.417983478061515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eba7708a40cf%3A0x386bbc5c53ca247d!2sYewalewadi%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1745848008258!5m2!1sen!2sin" 
+  width="100%" 
+  height="100%" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+<hr>
+<!--                __________________________footer navbar____________________ -->
+<!-- Footer Section -->
+<hr>
+<footer class="footer text-white py-10 foot">
+    <div class="container" >
+        <div class="row gy-4 text-center text-md-start">
+            <!-- Logo & Social Media -->
+            <div class="col-12 col-md-3">
+                <h5 class="fw-bold">
+                    <img src="/images/logo.png" alt="Company Logo" class="img-fluid mb-2">
+                </h5>
+                <h5 class="fw-bold">Follow Us</h5>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="col-6 col-md-3">
+                <h5 class="fw-bold">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><a href="#" class="text-white d-block">Home</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">About Us</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Services</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Provided -->
+            <div class="col-6 col-md-3">
+                <h5 class="fw-bold">Our Services</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><a href="#" class="text-white d-block">Wind Energy Solutions</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Solar Energy Systems</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Energy Saving Solutions</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Maintenance & Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-12 col-md-3">
+                <h5 class="fw-bold">Contact Us</h5>
+                <p class="mb-3"><i class="fas fa-map-marker-alt me-2"></i> 123 Renewable St, Green City, Country</p>
+                <p class="mb-3"><i class="fas fa-phone me-2"></i> +123 456 7890</p>
+                <p class="mb-3"><i class="fas fa-envelope me-2"></i> info@windsolutions.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer text-light py-3 foot1">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0">&copy; 2025 Best Wind Solutions. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Designed by 9551012012</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="jss/newjs.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+ // AOS.init();
+  
+  
+  AOS.init({ duration: 800, once: true });
+  AOS.init();
+  
+
+
+</script>
+</body>
+</html>

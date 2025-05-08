@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Navbar</title>
+
+    <!-- Include AOS library for scroll animations (CDN) -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Font Awesome (CDN for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="style/homestyle.css">
+    <link rel="stylesheet" href="style/aboutstyle.css">
+
+    <style>
+       /* Reduce navbar size */
+        .custom-navbar {
+            padding: 8px 0;
+        }
+        
+        .navbar-brand img {
+              width: 157px;
+    height: 81px;
+    margin-top: -9px;
+        }
+
+        /* Custom styling for toggler button */
+        .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        .navbar-toggler .fa-bars, 
+        .navbar-toggler .fa-times {
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Ensure toggler icon is centered */
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body id="fir">
+
+<!--     ___________________________________________  first navbar  ___________________________________________ -->
+ <!-- Responsive Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="firstnav">
+    <div class="container" id="abc">
+        <span class="navbar-text text-white ms-1">
+            📞 9551012012
+              ✉️ bhosaleraje01@gmail.com
+        </span>
+        <div class="ms-auto" id="abd">
+            <a href="https://facebook.com" class="text-white me-3" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com" class="text-white me-3" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://linkedin.com" class="text-white me-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://instagram.com" class="text-white" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+    </div>
+</nav>
+
+
+<!--     ___________________________________________  second navbar  ___________________________________________ -->
+<nav class="navbar navbar-light bg-white shadow-sm">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo.png" alt="Logo" />
+    </a>
+
+<!-- Desktop Nav (hidden on small screens) -->
+<ul class="nav desktop-nav d-none d-lg-flex">
+  <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="about">About</a></li>
+
+  <!-- Dropdown Menu for Services -->
+ <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Services
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+    <li><a class="dropdown-item" href="service1">Service 1</a></li>
+    <li><a class="dropdown-item" href="service2">Service 2</a></li>
+    <li><a class="dropdown-item" href="service2">Service 3</a></li>
+    <li><a class="dropdown-item" href="service2">Service 4</a></li>
+    <li><a class="dropdown-item" href="service2">Service 5</a></li>
+    <li><a class="dropdown-item" href="service2">Service 6</a></li>
+  </ul>
+</li>
+
+  <li class="nav-item"><a class="nav-link" href="completepro">completed Projects</a></li>
+  <li class="nav-item"><a class="nav-link" href="contact">Contact Us</a></li>
+</ul>
+
+    <!-- Toggler (hidden on large screens) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+
+
+
+<!-- Offcanvas Menu for Mobile -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about">About</a></li>
+   <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Services
+  </a>
+  <ul class="dropdown-menu position-static" aria-labelledby="servicesDropdown">
+    <li><a class="dropdown-item" href="service1">Service 1</a></li>
+    <li><a class="dropdown-item" href="service1">Service 2</a></li>
+    <li><a class="dropdown-item" href="service1">Service 3</a></li>
+    <li><a class="dropdown-item" href="service1">Service 4</a></li>
+    <li><a class="dropdown-item" href="service1">Service 5</a></li>
+    <li><a class="dropdown-item" href="service1">Service 6</a></li>
+  </ul>
+</li>
+
+      <li class="nav-item"><a class="nav-link" href="completepro">Our Completed Project</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact">Contact US</a></li>
+    </ul>
+  </div>
+</div>
+<!--     ___________________________________________  images at homepage  ___________________________________________ -->
+<!-- Carousel -->
+<!-- Carousel -->
+<div class="container-fluid">
+<div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="images/aboutus.png" class="d-block w-100 abg zoom-img" alt="Image 1">
+      
+      <div class="quote-overlay left-align">
+        <h1>About Us</h1>
+      </div>
+    </div>
+
+ 
+
+  </div>
+</div>
+</div>
+
+<!--  ______________________ this is about us page ____________  ______________________________________________________  -->
+
+<!-- ABOUT US PAGE -->
+<div class="container-fluid nexth">
+<div class="card text-center aboutuscard">
+ 
+  <div class="card-body">
+    <h5 class="card-title aaaa"><span class="col-orange">About us</span></h5>
+     <h5 class="card-title"><span class="col-orange texts">Since its inception in 2015</span> </h5>
+    <p class="cardtest"><b>ADIAVINAYS Solar Energy</b> has <b>the</b> capabilities to design, engineer, supply, install, operate and maintain solar plants (KW <b>to MW scale</b>), solar <b>street</b> lights, solar water pumps, solar water <b>heaters</b> and air source heat pumps. 
+
+We’ve installed <b>solar</b> plants for residential, commercial, industrial, government, schools and non-profit customers. Empowered by a team of<b> expert engineers</b>, electricians, solar installers and sales professionals, <b>SUS Solar Energy </b>makes clean <b>energy</b> 
+available at a <b>lower cost</b> than conventional energy like <b>coal, oil,</b> and natural gas. We’re a green energy company focused on offering turn-key solutions along with the highest quality <b>of service</b> and support. Our engineering expertise makes the switch from conventional
+ to solar extremely easy for our customers and helps them considerably <b>reduce</b> their monthly utility bills. By revolutionizing solar energy and making it<b> accessible</b> and available<b> to</b> everyone, we are <b>able to</b> successfully harness the power of the sun and deliver clean and green energy to all. 
+
+We have developed a highly economical, modular and easy to install solar system that delivers uninterrupted and affordable power supply<b> to</b> reduce your high electricity bills </p>
+    
+</div>
+</div>
+</div>
+<hr>
+
+<!--  __________________________________________________advantages____________________________________________________ -->
+<div class="container my-5">
+  <h2 class="text-center head mb-4">Advantages of Solar with ADIAVINAYS Solar Energy</h2>
+
+  <div class="row justify-content-center g-2 text-center">
+    <!-- Advantage 1 -->
+    <div class="col-auto border rounded p-2 bg-light">
+      <i class="bi bi-cash-coin icon-adv-small d-block"></i>
+      <h6 class="mt-1 mb-1 small">Finance && Benefits</h6>
+      <small>Savings, discount</small>
+    </div>
+
+    <!-- Advantage 2 -->
+    <div class="col-auto border rounded p-2 bg-light">
+      <i class="bi bi-brightness-high icon-adv-small d-block"></i>
+      <h6 class="mt-1 mb-1 small">Cleaned && Energy</h6>
+      <small>Eco-friendly</small>
+    </div>
+
+    <!-- Advantage 3 -->
+    <div class="col-auto border rounded p-2 bg-light">
+      <i class="bi bi-graph-up-arrow icon-adv-small d-block"></i>
+      <h6 class="mt-1 mb-1 small">Property Value</h6>
+      <small>Boosts resale value</small>
+    </div>
+
+    <!-- Advantage 4 -->
+    <div class="col-auto border rounded p-2 bg-light">
+      <i class="bi bi-lightning-charge icon-adv-small d-block"></i>
+      <h6 class="mt-1 mb-1 small">Reliable Power</h6>
+      <small>Works in blackouts</small>s
+    </div>
+    
+     <!-- Advantage 5-->
+    <div class="col-auto border rounded p-2 bg-light">
+      <i class="bi bi-lightning-charge icon-adv-small d-block"></i>
+      <h6 class="mt-1 mb-1 small">Reliable Power</h6>
+      <small>Works in blackouts</small>
+    </div>
+    
+      <!-- Advantage 6 -->
+    <div class="col-auto border rounded p-2 bg-light">
+      <i class="bi bi-lightning-charge icon-adv-small d-block"></i>
+      <h6 class="mt-1 mb-1 small">Reliable Power</h6>
+      <small>Works in blackouts</small>
+    </div>
+    
+     <h4 class="text-center">80% savings on energy bills</h2>
+  </div>
+</div>
+
+
+
+
+
+<!-- _________________________________________our processed_________________________________________________________ -->
+
+<div class="container-fluid my-5">
+  <h2 class="text-center head">Our Process</h2>
+  <div class="row text-center icon-row marg">
+    <div class="col-12 col-md-2 mb-4 offset-md-1">
+      <div class="icon-box">
+        <i class="bi bi-house-gear" ></i>
+        <p class="head">Site Survey</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-2 mb-4">
+      <div class="icon-box">
+        <i class="bi bi-pc-display-horizontal" ></i>
+        <p class="head">Design</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-2 mb-4">
+      <div class="icon-box">
+        <i class="bi bi-truck" ></i>
+        <p class="head">Equipment Supply</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-2 mb-4">
+      <div class="icon-box">
+        <i class="bi bi-arrow-down-circle-fill" ></i>
+        <p class="head">Installation</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-2 mb-4">
+      <div class="icon-box">
+        <i class="bi bi-gear-wide-connected" ></i>
+        <p class="head">Maintenance</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--                __________________________footer navbar____________________ -->
+<!-- Footer Section -->
+<footer class="footer text-white py-10 foot">
+    <div class="container" >
+        <div class="row gy-4 text-center text-md-start">
+            <!-- Logo & Social Media -->
+            <div class="col-12 col-md-3">
+                <h5 class="fw-bold">
+                    <img src="/images/logo.png" alt="Company Logo" class="img-fluid mb-2">
+                </h5>
+                <h5 class="fw-bold">Follow Us</h5>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="col-6 col-md-3">
+                <h5 class="fw-bold">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><a href="#" class="text-white d-block">Home</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">About Us</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Services</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Provided -->
+            <div class="col-6 col-md-3">
+                <h5 class="fw-bold">Our Services</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><a href="#" class="text-white d-block">Wind Energy Solutions</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Solar Energy Systems</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Energy Saving Solutions</a></li>
+                    <li class="mb-3"><a href="#" class="text-white d-block">Maintenance & Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-12 col-md-3">
+                <h5 class="fw-bold">Contact Us</h5>
+                <p class="mb-3"><i class="fas fa-map-marker-alt me-2"></i> 123 Renewable St, Green City, Country</p>
+                <p class="mb-3"><i class="fas fa-phone me-2"></i> +123 456 7890</p>
+                <p class="mb-3"><i class="fas fa-envelope me-2"></i> info@windsolutions.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer text-light py-3 foot1">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0">&copy; 2025 Best Wind Solutions. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Designed by 9551012012</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="jss/newjs.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+ // AOS.init();
+  
+  
+  AOS.init({ duration: 800, once: true });
+  AOS.init();
+  
+
+
+</script>
+</body>
+</html>

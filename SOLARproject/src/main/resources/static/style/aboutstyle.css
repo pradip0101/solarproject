@@ -1,0 +1,74 @@
+ 
+ .aboutuscard
+ {
+       
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 3.2); /* x y blur color */
+    border-radius: 12px; /* optional, for rounded corners */
+ }
+ .nexth{
+ padding: 3% 11%;}
+ .col-orange{
+ color: #A4302D;
+ font-size:3rem;
+ }
+ .texts{
+ font-size:1.5rem;}
+ 
+ .zoom-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    overflow-x: hidden;
+}
+ 
+ /*  ______________________This is the our process section_________________________*/
+  .icon-box {
+      text-align: center;
+      padding: 20px;
+    }
+    .icon-box i {
+      font-size: 90px;
+      color: green;
+      margin-bottom: 10px;
+     animation: pulse 1.5s infinite ease-in-out;
+    }
+    @keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+     .icon-box i:hover {
+      font-size: 100px;
+      
+      display: block;
+     color: #A4302D;
+  animation: pulse 1s infinite ease-in-out;
+    }
+    .icon-box p {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .head{
+      color: #A4302D;}
+     
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.6rem; /* Adjust as needed */
+}
+
+          /*_____________________________________________Advantages____________________*/
+.icon-adv-small {
+  font-size: 2rem;
+  color: #007bff;
+  animation: pulse 1.6s infinite ease-in-out;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+} 
